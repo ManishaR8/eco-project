@@ -1,0 +1,37 @@
+.animate__animated {
+  animation-duration: 1s; 
+  animation-fill-mode: forwards; 
+}
+
+
+.animate__left-to-center {
+  -webkit-animation-name: animate__fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.animate__right-to-center {
+  -webkit-animation-name: animate__fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
